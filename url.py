@@ -9,7 +9,7 @@ def shortit(url):
     return(str(s.tinyurl.short(url)))
 
 st.header('URL Shortener')
-title = st.text_input('Enter the url', '')
+title = st.text_input('Enter the url', '',placeholder='Url Here')
 rdb=shortit(title)
 
 if st.button('Shorten Url'):
