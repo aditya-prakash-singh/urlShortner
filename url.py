@@ -3,10 +3,13 @@ import pyshorteners as ps
 print('working')
 
 def shortit(url):
-    if url=="":
+    try:
+        if url=="":
+            return('')
+        s=ps.Shortener()
+        return(str(s.tinyurl.short(url)))
+    except:
         return('')
-    s=ps.Shortener()
-    return(str(s.tinyurl.short(url)))
 
 st.header('URL Shortener')
 title = st.text_input('Enter the url', '',placeholder='Url Here')
