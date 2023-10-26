@@ -7,9 +7,9 @@ def shortit(url):
         if url=="":
             return('')
         s=ps.Shortener()
+        return(str(s.tinyurl.short(url)))
     except:
         return('')
-    return(str(s.tinyurl.short(url)))
 
 st.header('URL Shortener')
 title = st.text_input('Enter the url', '',placeholder='Url Here')
