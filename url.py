@@ -18,14 +18,5 @@ rdb=shortit(title)
 if st.button('Shorten Url'):
     rdb=shortit(title)
 st.write('Your Shortened URL : ',rdb)
-st.write('\n')
-st.write('\n')
-st.write('\n')
-def close():
-    try:
-        pyautogui.hotkey('ctrl', 'w')
-    except:
-        st.write('Error ')
 
-if st.button('Close'):
-    rdb=close()
+
