@@ -33,6 +33,6 @@ title = st.text_input('Enter the url', '',placeholder='Url Here')
 
 if st.button('Shorten Url'):
     rdb=shortit(title)
-    generate_qrcode(title)
+    generate_qrcode(rdb)
     st.write('Your Shortened URL : ',rdb,'\n')
     st.image('img.png', caption='QR',width=140)
