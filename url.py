@@ -36,8 +36,3 @@ if st.button('Shorten Url'):
     generate_qrcode(title)
     st.write('Your Shortened URL : ',rdb,'\n')
     st.image('img.png', caption='QR',width=140)
-
-
-
-st.write('\n')
-st.write('\n')
